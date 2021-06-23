@@ -128,7 +128,7 @@ function loadLargePage(page, pageElement) {
 	});
 
 	// Loadnew page	
-	img.attr('src', 'pages/' +  page + '-large.jpg');
+	img.attr('src', './src/pages/' +  page + '-large.jpg');
 }
 
 // Load small page
@@ -137,7 +137,7 @@ function loadSmallPage(page, pageElement) {
 	img.css({width: '100%', height: '100%'});
 	img.unbind('load');
 	// Loadnew page
-	img.attr('src', 'pages/' +  page + '.jpg');
+	img.attr('src', './src/pages/' +  page + '.jpg');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488
@@ -236,7 +236,7 @@ function moveBar(yes) {
 function setPreview(view) {
 	var previewWidth = 112,
 		previewHeight = 73,
-		previewSrc = 'pages/preview.jpg',
+		previewSrc = './src/pages/preview.jpg',
 		preview = $(_thumbPreview.children(':first')),
 		numPages = (view==1 || view==$('#slider').slider('option', 'max')) ? 1 : 2,
 		width = (numPages==1) ? previewWidth/2 : previewWidth;
