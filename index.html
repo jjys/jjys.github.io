@@ -2,9 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
     <title>Furimuri Official</title>
+    
+    <link href="./src/css/basic.css" rel="stylesheet">
+    <script type="text/javascript" src="./src/js/modernizr.2.5.3.min.js"></script>
   </head>
-  <body>
-    <h1>Furimuri</h1>
-  </body>
+  	<body>
+	    <h1 style='text-align: center;'>Furimuri</h1>
+	    <div class="flipbook-viewport">
+			<div class="container">
+				<div class="flipbook">
+					<div style="background-image:url(./src/pages/furi01.png)"></div>
+					<div style="background-image:url(./src/pages/furi02.png)"></div>
+					<div style="background-image:url(./src/pages/furi03.png)"></div>
+					<div style="background-image:url(./src/pages/4.jpg)"></div>
+					<div style="background-image:url(./src/pages/5.jpg)"></div>
+					<div style="background-image:url(./src/pages/6.jpg)"></div>
+					<div style="background-image:url(./src/pages/7.jpg)"></div>
+					<div style="background-image:url(./src/pages/8.jpg)"></div>
+					<div style="background-image:url(./src/pages/9.jpg)"></div>
+					<div style="background-image:url(./src/pages/10.jpg)"></div>
+					<div style="background-image:url(./src/pages/11.jpg)"></div>
+					<div style="background-image:url(./src/pages/12.jpg)"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="./src/js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="./src/js/turn.min.js"></script>
+		<script type="text/javascript" src="./src/js/basic.js"></script>
+		
+
+		<script type="text/javascript">
+			function loadApp() {
+				// Create the flipbook
+				$('.flipbook').turn({
+						// Width
+						width:$(window).height()*922*0.8/600,						
+						// Height
+						height:$(window).height()*0.8,
+						// Elevation
+						elevation: 10,
+						// Enable gradients
+						gradients: true,
+						// Auto center this flipbook
+						autoCenter: true
+				});
+			}
+			loadApp();
+
+		</script>
+  	</body>
 </html>
