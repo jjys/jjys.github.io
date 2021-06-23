@@ -157,7 +157,7 @@ function disableControls(page) {
 			$('.next-button').show();
 }
 
-/*
+
 // Set the width and height for the viewport
 function resizeViewport() {
 	var width = $(window).width(),
@@ -169,10 +169,8 @@ function resizeViewport() {
 	$('.magazine-viewport').css({
 		width: width,
 		height: height
-	}).
+	}).zoom('resize');
 	
-	
-	zoom('resize');
 	if ($('.magazine').turn('zoom')==1) {
 		var bound = calculateBound({
 			width: options.width,
@@ -217,7 +215,7 @@ function resizeViewport() {
 	$('.magazine').addClass('animated');
 	
 }
-*/
+
 
 
 // Number of views in a flipbook
