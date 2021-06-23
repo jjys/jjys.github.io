@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
     <title>Furimuri Official</title>
     
     <link href="./src/css/basic.css" rel="stylesheet">
@@ -16,7 +17,7 @@
   	<body>
 	    <h1 style='text-align: center;'>Furimuri</h1>
 	    <div id="canvas">
-			<div class="zoom-icon zoom-icon-in"></div>
+			<div class="zoom-icon zoom-icon-in" style='display: none;'></div>
 			<div class="magazine-viewport">
 				<div class="container">
 					<div class="magazine">
@@ -155,6 +156,7 @@
 
 			});
 
+			/*
 			// Zoom.js
 			$('.magazine-viewport').zoom({
 				flipbook: $('.magazine'),
@@ -217,6 +219,7 @@
 				$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
 			else
 				$('.magazine-viewport').bind('zoom.tap', zoomTo);
+			*/
 
 			// Using arrow keys to turn the page
 			$(document).keydown(function(e){
@@ -325,7 +328,7 @@
 				$('.magazine').turn('previous');
 			});
 
-			resizeViewport();
+			//resizeViewport();
 			$('.magazine').addClass('animated');
 			}
 
