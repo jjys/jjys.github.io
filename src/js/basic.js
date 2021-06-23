@@ -128,7 +128,7 @@ function loadLargePage(page, pageElement) {
 	});
 
 	// Loadnew page	
-	img.attr('src', './src/pages/' +  page + '-large.jpg');
+	img.attr('src', './src/pages/' +  page + '-large.png');
 }
 
 // Load small page
@@ -137,7 +137,7 @@ function loadSmallPage(page, pageElement) {
 	img.css({width: '100%', height: '100%'});
 	img.unbind('load');
 	// Loadnew page
-	img.attr('src', './src/pages/' +  page + '.jpg');
+	img.attr('src', './src/pages/' +  page + '.png');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488
@@ -170,7 +170,7 @@ function resizeViewport() {
 		width: width,
 		height: height
 	}).zoom('resize');
-	
+
 	if ($('.magazine').turn('zoom')==1) {
 		var bound = calculateBound({
 			width: options.width,
