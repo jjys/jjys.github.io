@@ -34,7 +34,7 @@ function loadPage(page, pageElement) {
 		pageElement.find('.loader').remove();
 	});
 	// Load the page
-	img.attr('src', './src/pages/' +  page + '.jpg');
+	img.attr('src', './src/pages/' +  page + '.png');
 	loadRegions(page, pageElement);
 }
 
