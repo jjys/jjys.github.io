@@ -15,9 +15,9 @@
 	<script type="text/javascript" src="./src/js/basic.js"></script>
   </head>
   	<body>
-	    <h1 style='text-align: center;'>Furimuri</h1>
+	    <!-- <h1 style='text-align: center;'>Furimuri</h1> -->
 	    <div id="canvas">
-			<div class="zoom-icon zoom-icon-in" style='display: none;'></div>
+			<div class="zoom-icon zoom-icon-in"></div>
 			<div class="magazine-viewport">
 				<div class="container">
 					<div class="magazine">
@@ -127,9 +127,6 @@
 						$('.thumbnails .page-'+page).
 							parent().
 							addClass('current');
-
-
-
 					},
 
 					turned: function(event, page, view) {
@@ -156,7 +153,7 @@
 
 			});
 
-			/*
+			
 			// Zoom.js
 			$('.magazine-viewport').zoom({
 				flipbook: $('.magazine'),
@@ -219,7 +216,7 @@
 				$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
 			else
 				$('.magazine-viewport').bind('zoom.tap', zoomTo);
-			*/
+			
 
 			// Using arrow keys to turn the page
 			$(document).keydown(function(e){
@@ -257,13 +254,13 @@
 				}
 			});
 
-			/*
+			
 			$(window).resize(function() {
 				resizeViewport();
 			}).bind('orientationchange', function() {
 				resizeViewport();
 			});
-			*/
+			
 
 			// Events for thumbnails
 			$('.thumbnails').click(function(event) {			
@@ -329,11 +326,11 @@
 				$('.magazine').turn('previous');
 			});
 
-			//resizeViewport();
+			resizeViewport();
 			$('.magazine').addClass('animated');
 			}
 
-			/*
+			
 			// Zoom icon
 			$('.zoom-icon').bind('mouseover', function() { 		
 				if ($(this).hasClass('zoom-icon-in'))
@@ -351,7 +348,7 @@
 				else if ($(this).hasClass('zoom-icon-out'))	
 				$('.magazine-viewport').zoom('zoomOut');
 			});
-			*/
+			
 
 			$('#canvas').hide();
 			loadApp();
