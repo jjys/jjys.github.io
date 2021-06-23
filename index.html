@@ -102,7 +102,7 @@
 				// Elevation from the edge of the flipbook when turning a page
 				elevation: 50,
 				// The number of pages
-				pages: 12,
+				pages: 3,
 				// Events
 				when: {
 					turning: function(event, page, view) {
@@ -304,7 +304,6 @@
 			}
 
 			// Events for the next button
-
 			$('.next-button').bind($.mouseEvents.over, function() {
 				$(this).addClass('next-button-hover');
 			}).bind($.mouseEvents.out, function() {
@@ -334,8 +333,8 @@
 			$('.magazine').addClass('animated');
 			}
 
+			/*
 			// Zoom icon
-
 			$('.zoom-icon').bind('mouseover', function() { 		
 				if ($(this).hasClass('zoom-icon-in'))
 					$(this).addClass('zoom-icon-in-hover');
@@ -352,6 +351,7 @@
 				else if ($(this).hasClass('zoom-icon-out'))	
 				$('.magazine-viewport').zoom('zoomOut');
 			});
+			*/
 
 			$('#canvas').hide();
 			loadApp();
